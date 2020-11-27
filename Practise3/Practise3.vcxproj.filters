@@ -21,5 +21,11 @@
     <ClCompile Include="20183757-LeHaHung_Bai3_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

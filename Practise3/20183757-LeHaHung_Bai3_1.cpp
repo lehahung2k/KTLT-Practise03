@@ -10,8 +10,11 @@ int lucas(int n) {
 }
 
 int main() {
+    int n;
     cout << "Ho va ten: Le Ha Hung" << endl;
     cout << "MSSV:20183757" << endl;
-    cout << lucas(5);
+    cout << "nhap n:" << endl;
+    cin >> n;
+    cout << lucas(n);
     return 0;
 }
