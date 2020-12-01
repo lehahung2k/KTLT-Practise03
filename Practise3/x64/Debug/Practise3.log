@@ -1,2 +1,20 @@
-﻿  20183757-LeHaHung_Bai3_2.cpp
-  Practise3.vcxproj -> D:\20201\KTLT\Practise3\KTLT-Practise03\x64\Debug\Practise3.exe
+﻿  20183757-LeHaHung_Bai3_11.cpp
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(17,19): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(46,51): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(51,36): error C2955: 'std::basic_istream': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream(25): message : see declaration of 'std::basic_istream'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(51,29): error C2955: 'std::basic_istream': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream(25): message : see declaration of 'std::basic_istream'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(51,43): error C2665: 'std::basic_istream<_Elem,_Traits>::getline': none of the 2 overloads could convert all the argument types
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream(435,39): message : could be 'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::getline(_Elem *,std::streamsize)'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(51,43): message : while trying to match the argument list '(std::istream, std::string)'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(53,22): error C2079: 'stm' uses undefined class 'std::basic_stringstream<char,std::char_traits<char>,std::allocator<char>>'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(53,28): error C2440: 'initializing': cannot convert from 'std::string' to 'int'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(53,25): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(54,22): error C2079: 'ss' uses undefined class 'std::basic_stringstream<char,std::char_traits<char>,std::allocator<char>>'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(57,16): error C3861: 'getline': identifier not found
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(58,16): error C2677: binary '<<': no global operator found which takes type 'std::string' (or there is no acceptable conversion)
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(59,23): error C2563: mismatch in formal parameter list
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(59,23): error C2568: '<<': unable to resolve function overload
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(59,23): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+D:\20201\KTLT\Practise3\KTLT-Practise03\Practise3\20183757-LeHaHung_Bai3_11.cpp(65,16): warning C4552: '>>': result of expression not used

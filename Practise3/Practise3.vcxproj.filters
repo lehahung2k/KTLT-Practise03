@@ -27,5 +27,29 @@
     <ClCompile Include="20183757-LeHaHung_Bai3_9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20183757-LeHaHung_Bai3_12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

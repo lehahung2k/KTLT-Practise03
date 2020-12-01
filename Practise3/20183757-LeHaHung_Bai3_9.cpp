@@ -56,6 +56,8 @@ void Try(int k) {
     }
 }
 int main() {
+    cout << "Ho va ten: Le Ha Hung" << endl;
+    cout << "MSSV: 20183757" << endl;
     cin >> n >> K1 >> K2;
     Try(1);
     return 0;

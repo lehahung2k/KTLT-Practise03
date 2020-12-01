@@ -1,37 +1,57 @@
 ﻿#include <iostream>
-
+#define MAX 1000
 using namespace std;
-#define MAX 100
-int n, c[MAX][MAX]; //# số thành phố và ma trận chi phí
-int cmin = INT_MAX; //# chi phí đi lại nhỏ nhất giữa hai thành phố khác nhau
-int best = INT_MAX; //# tổng chi phí nhỏ nhất cần tìm, ban đầu đặt bằng giá tr
-//ị vô cùng lớn INT_MAX = 2 ^ 31 - 1
-int curr; //# tổng chi phí tới thời điểm hiện tại
-int mark[MAX]; //# đánh dấu những thành phố đã đi
-int x[MAX]; //# lưu giữ các thành phố đã đi
-//# Đọc dữ liệu vào
-void input() {
-	cin >> n;
-	for (int i = 1; i <= n; ++i)
-		for (int j = 1; j <= n; ++j) {
-			cin >> c[i][j];
-			if (c[i][j] > 0) cmin = min(cmin, c[i][j]);
-		}
-}
-//# Thuật toán quay lui
-void TRY(int k) {
-	for (int i = 2; i <= n; i++) {
-		/*****************
-		# YOUR CODE HERE #
-		*****************/
 
+int n, c[MAX][MAX];
+int X[MAX], X_best[MAX], mark[MAX];
+int sum, sum_best, c_min;
 
-	}
+void init() {
+    sum = 0;
+    sum_best = 1000000;
+    X[1] = 1;
+    mark[1] = 1;
+    c_min = 1e9;
+    for (int i = 1; i <= n; ++i)
+        for (int j = 1; j <= n; ++j)
+            if (i != j && c[i][j] < c_min) c_min = c[i][j];
 }
+
+void print() {
+    cout << sum_best + c[X_best[n]][X_best[1]] << endl;
+}
+
+void TRY(int i, int x) {
+    for (int v = 2; v <= n; v++) {
+        if (mark[v] == 0) {
+            mark[v] = 1;
+            X[i] = v;
+            sum += c[x][v];
+            if (i == n) {
+                if (sum < sum_best) {
+                    sum_best = sum;
+                    for (int j = 1; j <= n; j++) X_best[j] = X[j];
+                }
+            }
+            else {
+                if (sum + c_min * (n - i + 1) < sum_best) TRY(i + 1, v);
+            }
+            mark[v] = 0;
+            sum -= c[x][v];
+        }
+    }
+}
+
 int main() {
-	input();
-	x[1] = 1;
-	TRY(2);
-	cout << best;
-	return 0;
+    cout << "Ho va ten: Le Ha Hung" << endl;
+    cout << "MSSV: 20183757" << endl;
+
+    cin >> n;
+    for (int i = 1; i <= n; ++i)
+        for (int j = 1; j <= n; ++j)
+            cin >> c[i][j];
+    init();
+    TRY(2, 1);
+    print();
+    return 0;
 }
